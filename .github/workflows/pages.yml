@@ -32,3 +32,5 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+# Pages enabled in repository settings on 2026-10-07
