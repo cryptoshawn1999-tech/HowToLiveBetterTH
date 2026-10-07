@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>泰国高性价比生存指南</title>
+<meta name="description" content="面向在泰国长期生活者的循证生存指南：身份、工作、交通、租房、银行、税务、热带健康和应急。">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#15171a;--muted:#69707a;--line:#e2e6eb;--brand:#163e73;--accent:#0f766e;--danger:#b42318;--chip:#eef2f7;--shadow:0 8px 24px rgba(15,23,42,.06)}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#171a20;--text:#edf0f4;--muted:#9da5b0;--line:#2a3038;--brand:#8ab4f8;--accent:#5eead4;--danger:#ff8a80;--chip:#232932;--shadow:none}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}a{color:var(--brand)}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.wrap{max-width:1120px;margin:auto;padding:0 18px}.top{padding:16px 0 12px;display:flex;gap:18px;align-items:center;justify-content:space-between}.brand h1{font-size:22px;margin:0}.brand p{margin:2px 0 0;color:var(--muted);font-size:13px}.stat{font-size:13px;color:var(--muted);white-space:nowrap}
+.emergency{background:#fff0ed;color:#7a271a;border-bottom:1px solid #ffd6cf;padding:8px 0;font-weight:650}@media(prefers-color-scheme:dark){.emergency{background:#341713;color:#ffb4a8;border-color:#5f2a23}}
+.controls{padding:14px 0;display:grid;grid-template-columns:2fr repeat(4,1fr);gap:8px}.controls input,.controls select{width:100%;padding:10px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);outline:none}.controls input:focus,.controls select:focus{border-color:var(--brand)}
+main{padding:24px 0 60px}.summary{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}.pill{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}.card h2{font-size:17px;line-height:1.35;margin:4px 0 10px}.id{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted)}.plain{font-size:15px;margin:8px 0}.benefit{border-left:3px solid var(--accent);padding-left:10px;margin:10px 0;color:var(--text)}.meta{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.tag{font-size:11px;background:var(--chip);padding:3px 7px;border-radius:999px;color:var(--muted)}.ratio{font-weight:700;color:var(--accent)}.sources{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px}.sources details{color:var(--muted)}.sources ul{padding-left:20px;margin:7px 0}.chapter{color:var(--brand);font-weight:650;font-size:12px}.empty{padding:50px 0;text-align:center;color:var(--muted)}footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font-size:12px}
+@media(max-width:800px){.controls{grid-template-columns:1fr 1fr}.controls input{grid-column:1/-1}.grid{grid-template-columns:1fr}.top{align-items:flex-start}.stat{display:none}}
+</style>
+</head>
+<body>
+<div class="emergency"><div class="wrap">紧急：警察 191 · 火警/灾害 199 · 医疗 1669 · 旅游警察 1155 · AOC 反诈 1441</div></div>
+<header><div class="wrap"><div class="top"><div class="brand"><h1>🇹🇭 泰国高性价比生存指南</h1><p>先保命，再保身份，再保钱。每条都写成本、收益、证据和核实日期。</p></div><div class="stat" id="stat"></div></div><div class="controls">
+<input id="q" placeholder="搜索：90天、摩托、押金、诈骗、登革热……">
+<select id="chapter"><option value="">全部章节</option></select>
+<select id="grade"><option value="">全部证据</option><option>A</option><option>B</option><option>C</option></select>
+<select id="ratio"><option value="">全部性价比</option><option>极高</option><option>高</option><option>中</option></select>
+<select id="benefit"><option value="">全部收益</option><option>生命</option><option>身份</option><option>自由</option><option>金钱</option><option>时间</option><option>精力</option></select>
+</div></div></header>
+<main><div class="wrap"><div class="summary" id="summary"></div><div class="grid" id="grid"></div></div></main>
+<footer><div class="wrap">内容仅作通用信息整理，不替代医生、律师、会计师或移民专业人士的个案意见。规则会变，易变事项请先打开官方来源核验。</div></footer>
+<script>
+const $=id=>document.getElementById(id); let entries=[],sources={};
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+async function init(){[entries,sources]=await Promise.all([fetch('data/entries.json').then(r=>r.json()),fetch('data/sources.json').then(r=>r.json())]);
+ const chapters=[...new Map(entries.map(e=>[e.chapter,e.chapter_title])).entries()]; chapters.forEach(([k,v])=>$('chapter').insertAdjacentHTML('beforeend',`<option value="${k}">${k}. ${esc(v)}</option>`));
+ ['q','chapter','grade','ratio','benefit'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',render)); render(); }
+function render(){const q=$('q').value.trim().toLowerCase(),ch=$('chapter').value,g=$('grade').value,r=$('ratio').value,b=$('benefit').value;
+ const filtered=entries.filter(e=>{const hay=[e.title,e.plain,e.benefit,e.chapter_title,...e.applies_to,...e.benefit_types].join(' ').toLowerCase(); return(!q||hay.includes(q))&&(!ch||e.chapter===ch)&&(!g||e.grade===g)&&(!r||e.ratio===r)&&(!b||e.benefit_types.includes(b));});
+ $('stat').textContent=`${entries.length} 条 · 最后核实 2026-10-07`;
+ $('summary').innerHTML=`<span class="pill">显示 ${filtered.length} / ${entries.length}</span><span class="pill">A=${filtered.filter(e=>e.grade==='A').length}</span><span class="pill">极高=${filtered.filter(e=>e.ratio==='极高').length}</span>`;
+ $('grid').innerHTML=filtered.length?filtered.map(card).join(''):'<div class="empty">没有匹配条目。换个关键词或清空筛选。</div>'; }
+function card(e){const src=e.sources.map(k=>sources[k]).filter(Boolean).map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('');
+ return `<article class="card"><div class="chapter">${e.chapter}. ${esc(e.chapter_title)}</div><div class="id">${e.id}</div><h2>${esc(e.title)}</h2><p class="plain">${esc(e.plain)}</p><div class="benefit"><b>换回：</b>${esc(e.benefit)}</div><div class="meta"><span class="tag ratio">性价比 ${esc(e.ratio)}</span><span class="tag">证据 ${esc(e.grade)}</span><span class="tag">钱 ${esc(e.cost.money)}</span><span class="tag">时间 ${esc(e.cost.time)}</span><span class="tag">毅力 ${esc(e.cost.effort)}</span><span class="tag">政策波动 ${esc(e.policy_volatility)}</span>${e.benefit_types.map(x=>`<span class="tag">${esc(x)}</span>`).join('')}</div><div class="sources"><details><summary>来源 · 核实 ${esc(e.verified)}</summary><ul>${src}</ul></details></div></article>`; }
+init().catch(err=>{$('grid').innerHTML=`<div class="empty">加载失败：${esc(err.message)}。请通过 HTTP/GitHub Pages 打开，而不是直接双击本地 HTML。</div>`});
+</script></body></html>
