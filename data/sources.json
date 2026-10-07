@@ -1,0 +1,152 @@
+{
+  "BKK_SAFETY": {
+    "title": "Bangkok Metropolitan Administration — Safety / emergency numbers",
+    "url": "https://invest.bangkok.go.th/safety-2/",
+    "type": "official"
+  },
+  "TOURIST_POLICE": {
+    "title": "Thailand Tourist Police — Contact / 1155",
+    "url": "https://www.touristpolice.go.th/contact-us",
+    "type": "official"
+  },
+  "NIEMS": {
+    "title": "National Institute for Emergency Medicine (NIEM) — emergency medical system",
+    "url": "https://emsdispute.niems.go.th/",
+    "type": "official"
+  },
+  "WHO_ROAD": {
+    "title": "WHO Thailand — Road safety",
+    "url": "https://www.who.int/thailand/our-work/road-safety",
+    "type": "WHO"
+  },
+  "DLT_LICENSE": {
+    "title": "Department of Land Transport — recognized driving licences / IDP",
+    "url": "https://fvp.dlt.go.th/Manual2",
+    "type": "official"
+  },
+  "TM47": {
+    "title": "Immigration Bureau — online 90-day notification guide",
+    "url": "https://tm47.immigration.go.th/manual/IndexForeign.html",
+    "type": "official"
+  },
+  "TM47_RULES": {
+    "title": "Immigration Bureau — notification of staying over 90 days",
+    "url": "https://test.immigration.go.th/?page_id=1666",
+    "type": "official"
+  },
+  "TM30": {
+    "title": "Immigration Bureau — TM30 residence notification system",
+    "url": "https://tm30.immigration.go.th/TM30/Foreigner/TM30EN/Home.html",
+    "type": "official"
+  },
+  "TM30_NOTIFY": {
+    "title": "Immigration Bureau — TM30 notify/search/export guide",
+    "url": "https://tm30.immigration.go.th/TM30/Foreigner/TM30EN/Notify-Residence.html",
+    "type": "official"
+  },
+  "REENTRY": {
+    "title": "Immigration Bureau — Application for Re-Entry Permit into the Kingdom",
+    "url": "https://www.immigration.go.th/citizen_manual/guid_en5.pdf",
+    "type": "official"
+  },
+  "IMM_ACT": {
+    "title": "Immigration Bureau — Immigration Act / penalties",
+    "url": "https://test.immigration.go.th/?page_id=2577",
+    "type": "official"
+  },
+  "OVERSTAY": {
+    "title": "Immigration Bureau FAQ — overstay fine",
+    "url": "https://test.immigration.go.th/?page_id=1447",
+    "type": "official"
+  },
+  "MOL_PROHIBITED": {
+    "title": "Ministry of Labour — occupations prohibited for foreign workers",
+    "url": "https://www.mol.go.th/employee/occupation_prohibited_en",
+    "type": "official"
+  },
+  "DOE_SCOPE": {
+    "title": "Department of Employment — foreigners must have work authorization and work within permitted scope",
+    "url": "https://www.doe.go.th/prd/ems/news/param/site/171/cat/7/sub/0/pull/detail/view/detail/object_id/82131",
+    "type": "official"
+  },
+  "DOE_CHANGE": {
+    "title": "Department of Employment — WP.6 change/add category, employer, locality or place of work",
+    "url": "https://www.doe.go.th/prd/assets/upload/files/alien_en/3943366d34828612fa9dccbe9502aefe.pdf",
+    "type": "official"
+  },
+  "EWORKPERMIT": {
+    "title": "Department of Employment — e-WorkPermit",
+    "url": "https://eworkpermit.doe.go.th/Home",
+    "type": "official"
+  },
+  "BOT_FRAUD": {
+    "title": "Bank of Thailand — financial fraud prevention measures",
+    "url": "https://www.bot.or.th/en/fraud/fraud-measure-development.html",
+    "type": "official"
+  },
+  "BOT_MULE": {
+    "title": "Bank of Thailand — enhanced mule-account measures",
+    "url": "https://www.bot.or.th/en/news-and-media/news/news-20250130.html",
+    "type": "official"
+  },
+  "BOT_FAQ": {
+    "title": "Bank of Thailand — Financial Threats FAQ",
+    "url": "https://www.bot.or.th/en/faqs/faqs-03.html",
+    "type": "official"
+  },
+  "RD_PIT": {
+    "title": "Revenue Department — Personal Income Tax",
+    "url": "https://www.rd.go.th/english/6045.html",
+    "type": "official"
+  },
+  "RD_SEC41": {
+    "title": "Revenue Department — Revenue Code Section 41",
+    "url": "https://www.rd.go.th/english/37749.html",
+    "type": "official"
+  },
+  "RD_2026": {
+    "title": "Revenue Department — 2026 PIT forms incl. foreign-sourced income declaration",
+    "url": "https://www.rd.go.th/english/68443.html",
+    "type": "official"
+  },
+  "OCPB_RENT": {
+    "title": "Office of the Consumer Protection Board — 2025 residential rental contract controls",
+    "url": "https://www.ocpb.go.th/news_view_en.php?nid=17995",
+    "type": "official"
+  },
+  "OCPB_RENT_CHECK": {
+    "title": "OCPB — enforcement checks on residential rental contracts",
+    "url": "https://www.ocpb.go.th/news_view_en.php?nid=17454",
+    "type": "official"
+  },
+  "DDC_DENGUE": {
+    "title": "Department of Disease Control — 2026 dengue prevention guidance",
+    "url": "https://www.ddc.moph.go.th/brc/news.php?deptcode=brc&news=60292",
+    "type": "official"
+  },
+  "DDC_RABIES": {
+    "title": "Department of Disease Control — 2026 rabies prevention after animal exposure",
+    "url": "https://www.ddc.moph.go.th/brc/news.php?deptcode=brc&news=60546&news_views=993",
+    "type": "official"
+  },
+  "DDC_HEAT": {
+    "title": "Department of Disease Control — heatstroke first aid",
+    "url": "https://ddc.moph.go.th/brc/news.php?deptcode=brc&news=42934&news_views=514",
+    "type": "official"
+  },
+  "AIR4THAI": {
+    "title": "Pollution Control Department — Air4Thai",
+    "url": "https://air4thai.pcd.go.th/",
+    "type": "official"
+  },
+  "AIR4THAI_GUIDE": {
+    "title": "Pollution Control Department — Air4Thai app / hourly AQI and PM2.5",
+    "url": "https://epo14.pcd.go.th/th/news/detail/192261/",
+    "type": "official"
+  },
+  "BKK_FIRE": {
+    "title": "Bangkok Metropolitan Administration — fire prevention / 199",
+    "url": "https://webportal.bangkok.go.th/bangphlat/page/sub/2112/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C-%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%86/0/info/500609/-%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%97%E0%B8%B1%E0%B8%99%E0%B8%9B%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%B4%E0%B8%87%E0%B9%84%E0%B8%AB%E0%B8%A1%E0%B9%89",
+    "type": "official"
+  }
+}
