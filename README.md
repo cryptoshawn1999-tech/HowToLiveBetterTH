@@ -1,4 +1,14 @@
+<p align="center"><img src="assets/hero.svg" alt="泰国高性价比生存指南" width="100%"></p>
+
 # 🇹🇭 泰国高性价比生存指南 · HowToLiveBetterTH
+
+<p>
+  <img alt="entries" src="https://img.shields.io/badge/entries-100-163e73">
+  <img alt="chapters" src="https://img.shields.io/badge/chapters-12-0f766e">
+  <img alt="verified" src="https://img.shields.io/badge/verified-2026--10--07-6b7280">
+  <img alt="content license" src="https://img.shields.io/badge/content-CC%20BY%204.0-A51931">
+  <img alt="code license" src="https://img.shields.io/badge/code-MIT-2D2A4A">
+</p>
 
 > 用尽量少的钱、时间和精力，降低在泰国生活时的 **死亡、违法、身份失效、被骗和大额损失** 风险。
 
@@ -12,7 +22,7 @@
 - 信息源优先级：**泰国政府官网 / WHO / 法规与官方系统 > 其他来源**
 - 在线检索页：`index.html` 会直接读取 `book/*.md`，发布 GitHub Pages 后即可使用
 
-## 先保存这张救命卡
+## 🚨 先保存这张救命卡
 
 | 场景 | 电话 |
 |---|---:|
@@ -42,7 +52,7 @@
 14. 高温出现意识异常或明显高热时，先快速降温并拨 **1669**。
 15. 用 **Air4Thai** 看 PM2.5；空气差时减少高强度户外活动。
 
-## 怎么读
+## 🧭 怎么读
 
 这不是任务清单。先筛“极高性价比”，再按你的身份筛选：在泰工作、长期居民、租房、驾驶、跨境收入等。`index.html` 直接读取 12 个章节文件，并提供关键词、章节、证据等级、性价比、收益类型和政策波动筛选。
 
@@ -59,7 +69,7 @@
 - **毅力：** `否 / 些 / 是`
 - **政策波动：** `低 / 中 / 高`。波动越高，越应该先看“最后核实日期”和官方原文。
 
-## 目录
+## 📚 目录
 
 - [00. 先保命：紧急情况](book/00.md) — 10 条
 - [01. 合法留在泰国：身份与移民](book/01.md) — 12 条
@@ -75,7 +85,7 @@
 - [11. 长期生活系统：让低级错误自动消失](book/11.md) — 3 条
 
 
-## 项目原则
+## 🧱 项目原则
 
 1. **先保命，再保身份，再保钱。** 性价比排序优先于知识分类。
 2. **写明成本和收益。** 不写“注意安全”这类没有动作的空话。
@@ -84,7 +94,7 @@
 5. **所有易变规则写核实日期。** 旧攻略不自动等于今天仍然有效。
 6. **不替代专业服务。** 医疗、法律、税务和移民个案可能需要医生、律师、会计师或持牌/正式服务机构复核。
 
-## 项目结构
+## 🗂️ 项目结构
 
 ```text
 book/                 # 12 个章节，100 条完整条目
@@ -95,7 +105,7 @@ CONTRIBUTING.md       # 贡献规则
 CREDITS.md            # 致谢与许可说明
 ```
 
-## 与《高性价比人生指南》的关系
+## 🙏 与《高性价比人生指南》的关系
 
 本项目的 **“成本 → 说人话 → 收益 → 证据等级 → 来源”** 组织方式，受到 [eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter) 启发。
 
@@ -103,12 +113,12 @@ CREDITS.md            # 致谢与许可说明
 
 原项目 2026-09-29 起：正文 CC BY 4.0、代码 MIT。本项目在 `CREDITS.md` 中保留明确致谢。
 
-## 许可
+## 📄 许可
 
 - 本项目原创正文：**CC BY 4.0**（见 `LICENSE-CONTENT.md`）
 - 本项目代码：**MIT**（见 `LICENSE-CODE`）
 
-## 贡献
+## 🤝 贡献
 
 欢迎提交 Issue / PR，尤其欢迎：泰语原文核对、最新法规更新、失效链接修复、英文/泰文版本。
 
